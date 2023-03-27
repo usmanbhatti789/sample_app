@@ -30,7 +30,7 @@ class BaseScreen extends StatelessWidget {
                     child: Container(
                       child: InkWell(
                         onTap: () {
-                          Navigator.pushReplacementNamed(context, '/bhair');
+                          Navigator.pushReplacementNamed(context, '/bhair', arguments: 'Text data for screen 1');
                         },
                         child: const CustomImage(
                           image: AssetImage('assets/images/opt1.png'),
@@ -42,7 +42,7 @@ class BaseScreen extends StatelessWidget {
                     child: Container(
                       child: InkWell(
                         onTap: (){
-                          Navigator.pushReplacementNamed(context, '/checknav');
+                          Navigator.pushReplacementNamed(context, '/checknav', arguments: 'Text data for screen 2');
                         },
                         child: const CustomImage(
                           image: AssetImage('assets/images/opt2.png'),
@@ -59,7 +59,7 @@ class BaseScreen extends StatelessWidget {
                       child: Container(
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushReplacementNamed(context, '/checknav');
+                            Navigator.pushReplacementNamed(context, '/checknav', arguments: 'Text data for screen 3');
                           },
                           child: const CustomImage(
                             image: AssetImage('assets/images/option_3.png'),
@@ -73,7 +73,7 @@ class BaseScreen extends StatelessWidget {
                       child: Container(
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushReplacementNamed(context, '/checknav');
+                            Navigator.pushReplacementNamed(context, '/checknav', arguments: 'Text data for screen 4');
                           },
                           child: const CustomImage(
                             image: AssetImage('assets/images/option_4.png'),
@@ -91,7 +91,7 @@ class BaseScreen extends StatelessWidget {
                       child: Container(
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushReplacementNamed(context, '/checknav');
+                            Navigator.pushReplacementNamed(context, '/checknav', arguments: 'Text data for screen 5');
                           },
                           child: const CustomImage(
                             image: AssetImage('assets/images/option_5.png'),
@@ -105,7 +105,7 @@ class BaseScreen extends StatelessWidget {
                       child: Container(
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushReplacementNamed(context, '/checknav');
+                            Navigator.pushReplacementNamed(context, '/checknav', arguments: 'Text data for screen 6');
                           },
                           child: const CustomImage(
                             image: AssetImage('assets/images/option_6.png'),
@@ -123,3 +123,4 @@ class BaseScreen extends StatelessWidget {
     );
   }
 }
+

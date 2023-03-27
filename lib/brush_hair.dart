@@ -5,9 +5,11 @@ class BrushHair extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ModalRoute? modalRoute = ModalRoute.of(context);
+    String textData = modalRoute?.settings.arguments as String? ?? 'Default title';
     return Scaffold(
       appBar: AppBar(
-        title: Text('MyApp'),
+        title: Text(textData),
       ),
       body: ListView.builder(
         padding: EdgeInsets.all(10),

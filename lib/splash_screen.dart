@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:lil_sikh_app/base_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, '/base');
+      Navigator.push(context, MaterialPageRoute(builder:(context)=>BaseScreen() ));
     });
   }
 

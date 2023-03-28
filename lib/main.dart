@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lil_sikh_app/check_navigation.dart';
+import 'package:lil_sikh_app/lang.dart';
 import 'package:lil_sikh_app/splash_screen.dart';
 import 'package:lil_sikh_app/base_screen.dart';
 import 'package:lil_sikh_app/brush_hair.dart';
@@ -16,11 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'MyApp',
       debugShowCheckedModeBanner: false,
       home:SplashScreen(),
-      routes: {
-        '/base': (context) => BaseScreen(),
-        '/checknav':(context) => CheckNav(),
-        '/bhair':(context) => BrushHair(),
-      },
+      // routes: {
+      //   '/base': (context) => BaseScreen(),
+      //   '/checknav':(context) => CheckNav(),
+      //   '/bhair':(context) => BrushHair(),
+      //   '/setting':(context)=>Lang(),
+      // },
     );
   }
 }
